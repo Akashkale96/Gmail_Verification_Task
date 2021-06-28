@@ -11,8 +11,6 @@ public class Baseclass
     public static void OpebTheBrowser()
     {
 
-
-
         System.setProperty("webdriver.chrome.driver","src/test/java/resources/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
@@ -22,7 +20,6 @@ public class Baseclass
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://mail.google.com/");
-
 
     }
 
